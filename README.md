@@ -4,7 +4,8 @@ building Jekyll websites in docker
 #### Setup
 * Download and extract the archive  
 `wget "https://github.com/gabriele6/docker-jekyll-nginx/archive/master.zip"`  
-`unzip master.zip`
+`unzip master.zip`  
+`cp -r docker-jekyll-nginx-master/* ./`
 * Edit the initialize.sh file with the location and repository name of the Jekyll theme you want to install  
  (example theme: https://github.com/arkadianriver/spectral)
 * run `./initialize.sh`
