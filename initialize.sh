@@ -1,10 +1,8 @@
 #!/bin/bash
 
-docker run -d -p 8080:80 alexwhen/docker-2048 > $FILE
-
 FILE="./config.txt"
-PROFILE="gabriele6" # your GitHub profile
-REPO="gabriele6.github.io" # the name of the repository you want to dockerize
+PROFILE="your_GitHub_profile"
+REPO="repository_name"
 BRANCH="master"
 NEW_DIRECTORY="personal"
 
