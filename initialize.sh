@@ -24,7 +24,7 @@ unzip "$BRANCH.zip"
 rm "$BRANCH.zip"
 mv "$REPO-$BRANCH" ./$NEW_DIRECTORY
 
-# building and serving with jekyll (assuming this is being run as root and port 80 is free to use)
+# building and serving with jekyll (assuming port 80 is free to use)
 docker run -d -v "/$PWD/$NEW_DIRECTORY:/src" -p 80:4000 grahamc/jekyll serve -H 0.0.0.0 >> $FILE
 
 echo ""
