@@ -5,7 +5,8 @@ building Jekyll websites in docker
 * Download and extract the archive  
 `wget "https://github.com/gabriele6/docker-jekyll-nginx/archive/master.zip"`  
 `unzip master.zip`  
-`cp -r docker-jekyll-nginx-master/* ./`
+`cp -r docker-jekyll-nginx-master/* ./`  
+`rm -r docker-jekyll-nginx-master/ master.zip README.md`
 * Edit file permissions  
  `chmod 777 initialize.sh`  
  `chmod 777 execute.sh` 
