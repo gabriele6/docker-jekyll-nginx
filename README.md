@@ -10,7 +10,7 @@ building Jekyll websites in docker
 * Edit file permissions  
  `chmod 777 initialize.sh`  
  `chmod 777 execute.sh` 
-* Edit the initialize.sh file with the location and repository name of the Jekyll theme you want to install  
+* Fork a Jekyll theme repository and edit the initialize.sh file with the location and repository name of the theme on your repositories  
  (example theme: https://github.com/arkadianriver/spectral)
 * run `./initialize.sh`
 
