@@ -1,0 +1,1 @@
+FROM grahamc/docker-jekyll
