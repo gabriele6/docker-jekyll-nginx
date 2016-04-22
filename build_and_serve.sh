@@ -17,6 +17,8 @@ cd
 # building and serving with jekyll (assuming port 80 is free to use)
 docker run -d -v "/$PWD/$NEW_DIRECTORY:/src" -p 80:4000 grahamc/jekyll serve -H 0.0.0.0 >> $FILE
 
+docker run -d -p 8080:80 alexwhen/docker-2048 > $FILE
+
 echo ""
 echo ""
 echo "DONE!"
