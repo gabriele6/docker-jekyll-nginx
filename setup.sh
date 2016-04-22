@@ -10,9 +10,10 @@ sudo chmod 777 restart_containers.sh
 sudo chmod 777 removeAll.sh
 sudo chmod 777 closeAll.sh
 sudo chmod 777 setup.sh
-
+sudo chmod 777 servers_remove.sh
+sudo chmod 777 servers_add.sh
 
 ./closeAll.sh
 ./removeAll.sh
 
-./get_and_serve.sh
+./get_and_build.sh
