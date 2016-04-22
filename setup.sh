@@ -3,8 +3,8 @@ unzip master.zip
 yes | cp -i -r docker-jekyll-nginx-master/* ./
 rm -r docker-jekyll-nginx-master/ master.zip README.md
 
-sudo chmod 777 initialize.sh
-sudo chmod 777 execute.sh
+sudo chmod 777 build_and_serve.sh
+sudo chmod 777 restart_containers.sh
 sudo chmod 777 removeAll.sh
 sudo chmod 777 closeAll.sh
 sudo chmod 777 setup.sh
