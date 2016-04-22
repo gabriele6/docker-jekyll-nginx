@@ -13,6 +13,8 @@ while read STRING; do
 	docker rm $STRING
 done < "$FILE"
 
+rm ./config.txt
+
 cd
 
 # deleting old content in the obsolete directory
