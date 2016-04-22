@@ -10,12 +10,14 @@ building Jekyll websites in docker
 `rm -r docker-jekyll-nginx-master/ master.zip README.md`
 * Edit file permissions  
  `chmod 777 build_and_serve.sh`  
+`chmod 777 get_and_serve.sh`  
  `chmod 777 restart_containers.sh` 
-* Fork a Jekyll theme and edit the build_and_serve.sh file with the location of the theme on your repositories (example theme: https://github.com/arkadianriver/spectral)
+* Fork a Jekyll theme and edit the get_and_serve.sh file with the location of the theme on your repositories (example theme: https://github.com/arkadianriver/spectral)
 * run `./build_and_serve.sh`
  
 Alternatively, after installing Docker you can download the script setup.sh to your home directory, edit file permissions with `chmod 777 setup.sh`, and run it with `./setup.sh`.  
-At this point you have a working theme installed. You might want to fork a theme, edit the build_and_serve.sh script with the forked theme location, and run `./build_and_serve.sh` to build everything and serve the site.
+At this point you have a working theme installed. You might want to fork a theme, edit the get_and_serve.sh script with the forked theme location, and run `./get_and_serve.sh` to build everything and serve the site.  
+If you don't need to download everything again, just run `build_and_serve.sh`
 
 Remember setup.sh should be executed only once, since it overrides everything and gets you to the default settings.
 
