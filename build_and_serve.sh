@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE="./config.txt"
+FILE="./containers.txt"
 PROFILE="arkadianriver" # the profile name of the Jekyll theme's creator
 REPO="spectral" # the repository name of the theme you want to use
 BRANCH="master"
