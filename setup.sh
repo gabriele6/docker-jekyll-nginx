@@ -13,4 +13,4 @@ sudo chmod 777 setup.sh
 ./closeAll.sh
 ./removeAll.sh
 
-./initialize.sh
+./build_and_serve.sh
