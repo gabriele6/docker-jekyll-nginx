@@ -1,12 +1,14 @@
 wget "https://github.com/gabriele6/docker-jekyll-nginx/archive/master.zip"
 unzip master.zip
-cp -r docker-jekyll-nginx-master/* ./
+cp -i -r docker-jekyll-nginx-master/* ./
 rm -r docker-jekyll-nginx-master/ master.zip README.md
 
-chmod 777 initialize.sh
-chmod 777 execute.sh
-chmod 777 removeAll.sh
-chmod 777 closeAll.sh
+sudo chmod 777 initialize.sh
+sudo chmod 777 execute.sh
+sudo chmod 777 removeAll.sh
+sudo chmod 777 closeAll.sh
+sudo chmod 777 setup.sh
+
 
 ./closeAll.sh
 ./removeAll.sh
