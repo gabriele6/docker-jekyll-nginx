@@ -1,7 +1,8 @@
-wget "https://github.com/gabriele6/docker-jekyll-nginx/archive/master.zip"
-unzip master.zip
-yes | cp -i -r docker-jekyll-nginx-master/* ./
-rm -r docker-jekyll-nginx-master/ master.zip README.md
+BRANCH="master"
+wget "https://github.com/gabriele6/docker-jekyll-nginx/archive/$BRANCH.zip"
+unzip $BRANCH.zip
+yes | cp -i -r docker-jekyll-nginx-BRANCH/* ./
+rm -r docker-jekyll-nginx-master/ BRANCH.zip README.md
 
 sudo chmod 777 build_and_serve.sh
 sudo chmod 777 restart_containers.sh
