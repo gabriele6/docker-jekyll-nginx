@@ -1,6 +1,6 @@
 wget "https://github.com/gabriele6/docker-jekyll-nginx/archive/master.zip"
 unzip master.zip
-cp -i -r docker-jekyll-nginx-master/* ./
+yes | cp -i -r docker-jekyll-nginx-master/* ./
 rm -r docker-jekyll-nginx-master/ master.zip README.md
 
 sudo chmod 777 initialize.sh
