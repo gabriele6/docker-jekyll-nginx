@@ -3,6 +3,7 @@ FILE="sites.txt"
 mkdir /usr/share/nginx/sites
 
 while read STRING; do
+        rm /etc/nginx/sites-available/$STRING
         touch /etc/nginx/sites-available/$STRING
         echo "server {
         listen 80;
@@ -18,15 +19,15 @@ while read STRING; do
         read STRING
         wget $STRING -O archive.zip
         unzip archive.zip
-        
         NEW_DIR=$(ls -dt */ | head -1| cut -d'/' -f1)
         cd $NEW_DIR
         echo SONO DENTRO $NEW_DIR
-        CONT=$(docker run --rm -v "/$PWD:/src" grahamc/jekyll build)
-        docker rm $CONT
+        docker run --rm -v "$(pwd):/src" grahamc/jekyll build
         rm -r /usr/share/nginx/sites/$NM/*
         cp -r _site/* /usr/share/nginx/sites/$NM
         cd
         rm archive.zip
         rm -r $NEW_DIR
 done < "$FILE"
+
+service nginx restart
