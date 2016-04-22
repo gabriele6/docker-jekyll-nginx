@@ -2,6 +2,7 @@
 building Jekyll websites in docker
 
 #### Setup
+* Install Docker (https://docs.docker.com/engine/installation/)
 * Download and extract the archive  
 `wget "https://github.com/gabriele6/docker-jekyll-nginx/archive/master.zip"`  
 `unzip master.zip`  
