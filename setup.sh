@@ -1,7 +1,7 @@
 BRANCH="master"
 wget "https://github.com/gabriele6/docker-jekyll-nginx/archive/$BRANCH.zip"
 unzip "$BRANCH.zip"
-yes | cp -i -r docker-jekyll-nginx-BRANCH/* ./
+yes | cp -i -r "docker-jekyll-nginx-BRANCH/*" ./
 rm -r docker-jekyll-nginx-master/ BRANCH.zip README.md
 
 sudo chmod 777 build_and_serve.sh
