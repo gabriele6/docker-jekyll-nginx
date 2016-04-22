@@ -8,4 +8,7 @@ chmod 777 execute.sh
 chmod 777 removeAll.sh
 chmod 777 closeAll.sh
 
+./closeAll.sh
+./removeAll.sh
+
 ./initialize.sh
