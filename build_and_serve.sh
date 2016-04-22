@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE="./containers.txt"
+FILE="containers.txt"
 NEW_DIRECTORY="personal"
 
 # halting and deleting the obsolete containers
