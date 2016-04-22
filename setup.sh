@@ -25,6 +25,7 @@ while read STRING; do
 	
 	CONT=$(docker run -d -v "/$PWD/$NEW_DIRECTORY:/src" grahamc/jekyll build)
 	docker rm $CONT
+	rm -r /usr/share/nginx/sites/$NM/*
 	cp -r _site/* /usr/share/nginx/sites/$NM
 	cd 
 	rm -r $NEW_DIR
