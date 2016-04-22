@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE="./config.txt"
+FILE="./containers.txt"
 
 while read STRING
 do
