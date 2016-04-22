@@ -12,6 +12,9 @@ sudo chmod 777 closeAll.sh
 sudo chmod 777 setup.sh
 sudo chmod 777 servers_remove.sh
 sudo chmod 777 servers_add.sh
+sudo chmod 777 build.sh
+sudo chmod 777 get_and_build.sh
+
 
 ./closeAll.sh
 ./removeAll.sh
