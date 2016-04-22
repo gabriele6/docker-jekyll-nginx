@@ -1,8 +1,8 @@
 #!/bin/bash
 
 FILE="./config.txt"
-PROFILE="your_GitHub_profile"
-REPO="repository_name"
+PROFILE="arkadianriver" # the profile name of the Jekyll theme's creator
+REPO="spectral" # the repository name of the theme you want to use
 BRANCH="master"
 NEW_DIRECTORY="personal"
 
