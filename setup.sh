@@ -20,13 +20,13 @@ while read STRING; do
 	unzip archive.zip
 	
 	NEW_DIR=$(ls -Art | tail -n 1)
-	rm archive.zip
 	cd $NEW_DIR
 	
 	CONT=$(docker run -d -v "/$PWD/$NEW_DIRECTORY:/src" grahamc/jekyll build)
 	docker rm $CONT
 	rm -r /usr/share/nginx/sites/$NM/*
 	cp -r _site/* /usr/share/nginx/sites/$NM
-	cd 
+	cd
+	rm archive.zip
 	rm -r $NEW_DIR
 done < "$FILE"
