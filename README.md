@@ -13,6 +13,8 @@ building Jekyll websites in docker
  `chmod 777 execute.sh` 
 * Fork a Jekyll theme and edit the initialize.sh file with the location of the theme on your repositories (example theme: https://github.com/arkadianriver/spectral)
 * run `./initialize.sh`
+ 
+Alternatively, after installing Docker you can download the script setup.sh to your home directory, edit file permissions with `chmod 777 setup.sh`, and run it with `./setup.sh`
 
 #### Running the existing containers automatically at startup
 * view the cron list with `crontab -e` (as root)
