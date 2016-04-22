@@ -7,3 +7,5 @@ do
 	docker stop $STRING
 	docker rm $STRING
 done < "$FILE"
+
+rm ./config.txt
