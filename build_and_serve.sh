@@ -1,9 +1,6 @@
 #!/bin/bash
 
 FILE="./containers.txt"
-PROFILE="arkadianriver" # the profile name of the Jekyll theme's creator
-REPO="spectral" # the repository name of the theme you want to use
-BRANCH="master"
 NEW_DIRECTORY="personal"
 
 # halting and deleting the obsolete containers
@@ -16,15 +13,6 @@ done < "$FILE"
 rm ./$FILE
 
 cd
-
-# deleting old content in the obsolete directory
-rm -r $NEW_DIRECTORY
-
-# downloading and extracting the updated jekyll files
-wget "https://github.com/$PROFILE/$REPO/archive/$BRANCH.zip"
-unzip "$BRANCH.zip"
-rm "$BRANCH.zip"
-mv "$REPO-$BRANCH" ./$NEW_DIRECTORY
 
 # building and serving with jekyll (assuming port 80 is free to use)
 docker run -d -v "/$PWD/$NEW_DIRECTORY:/src" -p 80:4000 grahamc/jekyll serve -H 0.0.0.0 >> $FILE
