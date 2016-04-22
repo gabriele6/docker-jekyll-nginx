@@ -15,4 +15,4 @@ sudo chmod 777 setup.sh
 ./closeAll.sh
 ./removeAll.sh
 
-./build_and_serve.sh
+./get_and_serve.sh
