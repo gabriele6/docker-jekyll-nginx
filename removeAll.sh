@@ -8,4 +8,4 @@ do
 	docker rm $STRING
 done < "$FILE"
 
-rm ./config.txt
+rm ./$FILE
