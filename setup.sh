@@ -6,11 +6,16 @@ while read STRING; do
         rm /etc/nginx/sites-available/$STRING
         touch /etc/nginx/sites-available/$STRING
         echo "server {
-        listen 80;
-        root /usr/share/nginx/sites/$STRING;
-        index index.php index.html index.htm;
-        server_name $STRING;
-      }" >> /etc/nginx/sites-available/$STRING
+                listen 80;
+                root /usr/share/nginx/sites/$STRING;
+                index index.php index.html index.htm;
+                server_name $STRING;
+                error_page 404 /404.html;
+                location  /404.html {
+                        internal;
+                }
+        }"
+ >> /etc/nginx/sites-available/$STRING
         mkdir /usr/share/nginx/sites/$STRING
         ln -s /etc/nginx/sites-available/$STRING /etc/nginx/sites-enabled/$STRING
 
